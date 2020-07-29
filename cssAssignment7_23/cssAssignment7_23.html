@@ -15,19 +15,48 @@
             font-size: 15px;
             font-family: serif, Arial;
         }
+        .firstParagraph{
+            border: dashed 1px black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #secondParagraph{
+            border: dotted 1px black;
+            margin: 5px;
+            padding: 5px;
+        }
+        .span1{
+            font-weight: 700;
+        }
+        .rotate {
+            animation: rotation 8s infinite linear;
+        }
+
+        @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+        }
     </style>
 </head>
 <body>
     <div>
         <h2>Gentoo Penguin :-)</h2>
-        <p>The Gentoo Penguin is the fastest penguin in the world.  It was first discovered in 1781.</p>
+        <div class="firstParagraph">
+            <p>The Gentoo Penguin is the fastest penguin in the world.  It was first discovered in 1781.</p>
+        </div>
         <hr>
-        <p>The origin of the name "Gentoo" is unknown, as the source of the name could have come from 
-        multiple places.  They are the third largest penguin and have an operating system named after
-        them called Gentoo.  It's my favorite animal because there's an OS named after it, and penguins
-        in general are heavily associated with Linux.</p>
+        <div id="secondParagraph">
+            <p>The origin of the name "Gentoo" is unknown, as the source of the name could have come from 
+            multiple places.  They are the third largest penguin and have an operating system named after
+            them called Gentoo.  It's my favorite animal because there's an OS named after it, and <span class="span1">penguins
+            in general are heavily associated with Linux</span>.</p>
+        </div>
     </div>
     <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/115369831/1800" height="250" 
-    alt="Gentoo" id="image">
+    alt="Gentoo" id="image" class="rotate">
 </body>
 </html>
