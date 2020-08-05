@@ -130,8 +130,8 @@
             <button class="btn mr-2 mt-2 btn-info btn-block">Block</button>
         </div>
 
-        <!--Cards-->
-        <div class="row" id="cards">
+        <!-- Cards -->
+        <div id="cards" class="row">
             <h2 class="section-header">Cards</h2>
         </div>
         <div class="row">
@@ -139,27 +139,23 @@
                 <div class="card" style="width: auto;">
                     <div class="card-header">Sunset</div>
                     <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg" 
-                    alt="Sunset Image" class="card-img-top">
+                    class="card-img-top" 
+                    alt="Sunset Image">
                     <div class="card-body">
-                        <div class="card-title">
-                            <h4>Sunset</h4>
-                        </div>
-                        <p class="card-text">This sunset looks pretty cool over the mountains.</p>
+                        <h5 class="card-title"> Sunset</h5>
+                        <p class="card-text">This Sunset looks pretty cool over the mountains</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click</a>
                     </div>
                 </div>
             </div>
-        
-       
             <div class="col-xs-10 col-sm-6 mb-5">
                 <div class="card" style="width: auto;">
                     <div class="card-header">Detroit Skyline</div>
                     <img src="https://traknetsolutions.com/wp-content/uploads/2019/11/detroit-skyline-linda-goodhue-photography.jpg" 
-                    alt="Sunset Image" class="card-img-top">
-                     <div class="card-body">
-                        <div class="card-title">
-                            <h4>Detroit Skyline</h4>
-                        </div>
+                    class="card-img-top" 
+                    alt="Detroit Image">
+                    <div class="card-body">
+                        <h5 class="card-title"> Detroit</h5>
                         <p class="card-text">The buildings in Detroit look pretty cool.</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click</a>
                     </div>
@@ -167,49 +163,111 @@
             </div>
         </div>
 
-        <!--Modals-->
+        <!-- Modals -->
         <div class="modal fade" id="exampleModal">
-              <!--Modal Dialogue
-            Modal Content
-            Modal Header
-            Modal Body 
-            Modal Footer
-            -->
+
+            <!-- 
+                Modal Dialog
+                    Modal Content
+                        Modal Header 
+                             Modal Title & Close Button
+                        Modal Body
+                        Modal Footer
+             -->
+
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <!--Modal Header-->
+                    <!-- Modal Header -->
                     <div class="modal-header">
-                        <h5 class="modal-ti">Modal Title</h5>
+                        <h5 class="modal-title">Modal Title</h5>
                         <button class="close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <!--Modal Body-->
+                    <!-- Modal Body -->
                     <div class="modal-body">
                         <p>This is the Modal's Body. Information goes here.</p>
                     </div>
-                    <!--Modal Footer-->
+                    <!-- Modal Footer -->
                     <div class="modal-footer">
                         <button class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
+
         </div>
 
-    
 
         <!-- Carousel -->
         <div class="row" id="carousel">
             <h1 class="section-header">Carousel</h1>
         </div>
 
+        <!--Carousel-->
+            <!--Carousel Inner-->
+            <!--Carousel Items-->
+            <!--Carousel Control Prev/Next-->
+
+        <div class="carousel slide" data-ride="carousel" id="carouselExampleControls" data-interval="1000">
+            <!--Carousel Indicators-->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators"
+                data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators"  data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators"  data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <h5>Slide 1</h5>
+                    </div>
+                    <img src="https://1.bp.blogspot.com/-284zVHSSNdU/Xkws-rEkenI/AAAAAAAA1UE/rGYdlnijghw6-wqFh45sYXYFbCZUEngdQCEwYBhgL/s1600/sunset_3.jpg"
+                     alt=""  class="d-block w-100">
+                </div>
+                 <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h5>Slide 2</h5>
+                    </div>
+                    <img src="https://image.dynamixse.com/crop/900x600/webp.q80.png-lossy-85/https://dynamix-cdn.s3.amazonaws.com/pikearmstrong/armstronggardencom_780232638.jpeg"
+                     alt=""  class="d-block w-100">
+                </div>
+                 <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h5>Slide 3</h5>
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0073/0375/7883/files/Denali.jpg?v=1547210395"
+                     alt=""  class="d-block w-100">
+                </div>
+
+                <!--Carousel Buttons-->
+                <a href="#carouselExampleControls" class="carousel-control-prev"
+                role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#carouselExampleControls" class="carousel-control-next"
+                 role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                 </a>
+            </div>
+        </div>
+
+
         <!-- Forms -->
-
-        <!-- Modal -->
-
-        <!-- Collapse -->
-
-        <!-- Dropdown -->
+        <div class="row" id="forms">
+            <h1 class="section-head">Forms</h1>
+        </div>
+        <div class="row input-type">
+            <div class="col-xs-12 col-sm-6">
+                <h6 class="input-type-header">Regular Input</h6>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">1</span>
+                        <input type="text" class="form-control" placeholder="username">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <!-- <div class="container-sm">100% wide until small breakpoint ≥ 576px</div>
