@@ -2,14 +2,22 @@
 <!--Make sure to add bootstrap later to make the page more responsive
 I need to learn a bit more about positioning and learn the common tags and 
 properties that I use
+bootstrap change layout with smaller size
 -->
 <html>
     <head>
         <title>About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        
         <style>
             body{
                 background: #3f4043;
                 color: white;
+                font-family: "Times New Roman";
             }
             #top-bar{
                 text-align: center;
@@ -22,10 +30,7 @@ properties that I use
                 margin-right: 30px;
                 display: flex;
                 flex-flow: column;
-                height: 100%;
-                /*In order to create a long vertical line separating some elements,
-                I will need to take advantage of border-right property*/
-                 border-right: 6px solid black; 
+              
             }
             a{
                 color: white;
@@ -33,6 +38,7 @@ properties that I use
                 text-decoration: none;
             }
             #right-bar{
+                float: left;
                 
                 
             }
@@ -40,20 +46,32 @@ properties that I use
     </head>
     <body>
         <header>
-            <div id="top-bar">
-                <h1>About Me</h1>
-                <hr style="background-color: yellow;
-                height: 2px;">
-            </div>
-            <div id="left-bar">
-                <h2>Ervin <br> Colston</h2>
-                <h3><a href="project.html">About Me</a></h3>
-                <h3><a href="infopage.html">Resume</a></h3>
-            </div>
-            <div id="right-bar">
-                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFaNS1Kdz060A/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=s5rFPcJEvcIPShqXjxvPoMUlD99v-XPE7O6TVIX33OE" alt="myself">
-                <h4>Age: 21</h4>
-                <h4>Profession: Student</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="top-bar">
+                            <h1>About Me</h1>
+                            <hr style="background-color: yellow;
+                            height: 2px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="left-bar">
+                            <h2>Ervin <br> Colston</h2>
+                            <h3><a href="project.html">About Me</a></h3>
+                            <h3><a href="infopage.html">Resume</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="right-bar">
+                            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFaNS1Kdz060A/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=s5rFPcJEvcIPShqXjxvPoMUlD99v-XPE7O6TVIX33OE" alt="myself">
+                            <h4>Age: 21</h4>
+                            <h4>Profession: Senior at Wayne State for Computer Science</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
     </body>
