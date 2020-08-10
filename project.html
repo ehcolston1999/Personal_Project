@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<!--Make sure to add bootstrap later to make the page more responsive-->
+<!--Make sure to add bootstrap later to make the page more responsive
+I need to learn a bit more about positioning and learn the common tags and 
+properties that I use
+-->
 <html>
     <head>
         <title>About Me</title>
         <style>
+            body{
+                background: #3f4043;
+                color: white;
+            }
+            #top-bar{
+                text-align: center;
+                margin-bottom: 25px;
+            }
             #left-bar{
                 width: 20%;
                 float: left;
+                text-align: center;
+                margin-right: 30px;
+                display: flex;
+                flex-flow: column;
+                height: 100%;
+                /*In order to create a long vertical line separating some elements,
+                I will need to take advantage of border-right property*/
+                 border-right: 6px solid black; 
+            }
+            a{
+                color: white;
+                /*Aesthetically my page looks better without the underline.*/
+                text-decoration: none;
+            }
+            #right-bar{
+                
                 
             }
         </style>
     </head>
     <body>
         <header>
-            <h1 style="text-align: center;">About Me</h1>
-            <hr>
-            <div id="left-bar">
-                <h2>Ervin Colston</h2>
-                <a href="infopage.html">Link to Info Page</a>
+            <div id="top-bar">
+                <h1>About Me</h1>
+                <hr style="background-color: yellow;
+                height: 2px;">
             </div>
-            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFaNS1Kdz060A/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=s5rFPcJEvcIPShqXjxvPoMUlD99v-XPE7O6TVIX33OE" alt="myself">
-            <h4>Age: 21</h4>
-            <h4>Profession: Student</h4>
+            <div id="left-bar">
+                <h2>Ervin <br> Colston</h2>
+                <h3><a href="project.html">About Me</a></h3>
+                <h3><a href="infopage.html">Resume</a></h3>
+            </div>
+            <div id="right-bar">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFaNS1Kdz060A/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=s5rFPcJEvcIPShqXjxvPoMUlD99v-XPE7O6TVIX33OE" alt="myself">
+                <h4>Age: 21</h4>
+                <h4>Profession: Student</h4>
+            </div>
         </header>
     </body>
 </html>
