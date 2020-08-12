@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!--
-fix the content size thing-->
+fix the content size thing
+Make Contact its own link on each page-->
 <html>
     <head>
         <title>Resume Content</title>
-        <title>About Me</title>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
@@ -41,6 +42,50 @@ fix the content size thing-->
         </style>
     </head>
     <body>
+           <!-- Collapse -->
+    <div class="collapse fixed-top bg-dark" id="mobileNavbar">
+        <div class="container mobile-menu-wrapper">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group mt-5 text-right">
+                        <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+                            <a href="project.html">About Me</a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+                            <a href="infopage.html">Resume</a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+                            <a href="contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <nav class="navbar fixed-top navbar-dark bg-dark">
+
+            <a href="#" class="navbar-brand">
+               
+            </a>
+                <!-- Mobile -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mobileNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Desktop -->
+            <ul class="nav d-none">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link active">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link active">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link active">Contact Me</a>
+                </li>
+            </ul>
+            </nav> <br>
         <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -51,159 +96,94 @@ fix the content size thing-->
                         </div>
                     </div>
                 </div>
-                <div class="row">
+               <!-- <div class="row">
                     <div class="col-md-3">
                         <div id="left-bar">
-                            <h2>Ervin <br> Colston</h2>
-                            <h3><a href="project.html">About Me</a></h3>
-                            <h3><a href="infopage.html">Resume</a></h3>
+                            <h4>Ervin <br> Colston</h4>
+                            <h4><a href="project.html">About Me</a></h4>
+                            <h4><a href="infopage.html">Resume</a></h4>
+                            <h4><a href="contact.html">Contact Me</a></h4>
                         </div>
-                    </div>
-                    <div class="col-md-9">
+                    </div> -->
+                    <div class="col-md-12 col-sm-12">
                         <div id="right-bar">
                             <h3>Opening Statement</h3>
-        <p>
-            I am a senior year at Wayne State University majoring in Computer Science. 
-            I have excellent math skills and problem solving ability. 
-        </p> 
-        <p>
-            If given the opportunity, I believe my prior knowledge and skills 
-            have prepared me for entry-level employment in my field of study. 
-        </p>
-        <h3>Hard Skills</h3>
-        <ul>
-            <li>Intermediate C/C++</li>
-            <li>Intermediate Java</li>
-            <li>Intermediate Racket/Common Lisp</li>
-            <li>SQL Database Proficient</li>
-            <li>VBA proficient</li>
-        </ul>
-        
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Great Communicator</li>
-            <li>Good at Memorizing</li>
-            <li>Good at Problem Solving</li>
-        </ul>
-        <h3>Personal Attributes</h3>
-        <ol>
-            <li>Intelligent</li>
-            <li>Strong</li>
-            <li>Kind</li>
-            <li>Truthful</li>
-            <li>Dependable</li>
-        </ol>
-        <h3>Career Trajectory</h3>
-            <p>In two years, I still see myself getting on my feet and learning all of the tricks of
-            the trade. 
-            In five years, I see myself either in a senior web developer role or a senior 
-            software engineering role.  
-            I will get there by first getting my foot into the industry and then work my
-            way up from there.</p>
-        <h3>Educational Qualifications</h3>
-        <table>
-            <tr>
-                <th>Qualification</th>
-                <th>Year Obtained</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>High School Diploma</td>
-                <td>2017</td>
-                <td>Graduated Magna Cum Laude</td>
-            </tr>
-        </table>
-        <h3>Employment History</h3>
-        <ol>
-            <li>Research Assistant at Meritor (2019)</li>
-            <li>Environmental Steward Internship at Belle Isle (2016-2017)</li>
-            <li>IT Help Desk at U of D Jesuit (2016-2017)</li>
-            <li>Golf Caddie (2014)</li>
-        </ol>
-        <h3>Contact</h3>
-        <form >
-                Email:
-                <input type="text" name="email"> <br> <br>
-                Message: <br>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here.."></textarea> <br> <br>
-                <button type="submit">Submit</button>
-            </form>
-
+                            <p>
+                                I am a senior year at Wayne State University majoring in Computer Science. 
+                                I have excellent math skills and problem solving ability. 
+                            </p> 
+                            <p>
+                                If given the opportunity, I believe my prior knowledge and skills 
+                                have prepared me for entry-level employment in my field of study. 
+                            </p> <br>
+                            <h3>Hard Skills</h3>
+                            <ul>
+                                <li>Intermediate C/C++</li>
+                                <li>Intermediate Java</li>
+                                <li>Intermediate Racket/Common Lisp</li>
+                                <li>SQL Database Proficient</li>
+                                <li>VBA proficient</li>
+                            </ul> <br>
+                            
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Great Communicator</li>
+                                <li>Good at Memorizing</li>
+                                <li>Good at Problem Solving</li>
+                            </ul> <br>
+                            <h3>Personal Attributes</h3>
+                            <ol>
+                                <li>Intelligent</li>
+                                <li>Strong</li>
+                                <li>Kind</li>
+                                <li>Truthful</li>
+                                <li>Dependable</li>
+                            </ol> <br>
+                            <h3>Career Trajectory</h3>
+                                <p>In two years, I still see myself getting on my feet and learning all of the tricks of
+                                the trade. 
+                                In five years, I see myself either in a senior web developer role or a senior 
+                                software engineering role.  
+                                I will get there by first getting my foot into the industry and then work my
+                                way up from there.</p> <br>
+                            <h3>Educational Qualifications</h3>
+                            <table>
+                                <tr>
+                                    <th>Qualification</th>
+                                    <th>Year Obtained</th>
+                                    <th>Details</th>
+                                </tr>
+                                <tr>
+                                    <td>High School Diploma</td>
+                                    <td>2017</td>
+                                    <td>Graduated Magna Cum Laude</td>
+                                </tr>
+                            </table> <br> <br>
+                            <h3>Employment History</h3>
+                            <ol>
+                                <li>Research Assistant at Meritor (2019)</li>
+                                <li>Environmental Steward Internship at Belle Isle (2016-2017)</li>
+                                <li>IT Help Desk at U of D Jesuit (2016-2017)</li>
+                                <li>Golf Caddie (2014)</li>
+                            </ol>
+                            <!--
+                            <h3>Contact</h3>
+                            <form >
+                                    Email:
+                                    <input type="text" name="email"> <br> <br>
+                                    Message: <br>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here.."></textarea> <br> <br>
+                                    <button type="submit">Submit</button>
+                            </form>
+                            -->
            
                         </div>
                     </div>
                 </div>
             </div>
 
-        <!--
-        <h3>Opening Statement</h3>
-        <p>
-            I am a senior year at Wayne State University majoring in Computer Science. 
-            I have excellent math skills and problem solving ability. 
-        </p> 
-        <p>
-            If given the opportunity, I believe my prior knowledge and skills 
-            have prepared me for entry-level employment in my field of study. 
-        </p>
-        <h3>Hard Skills</h3>
-        <ul>
-            <li>Intermediate C/C++</li>
-            <li>Intermediate Java</li>
-            <li>Intermediate Racket/Common Lisp</li>
-            <li>SQL Database Proficient</li>
-            <li>VBA proficient</li>
-        </ul>
-
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Great Communicator</li>
-            <li>Good at Memorizing</li>
-            <li>Good at Problem Solving</li>
-        </ul>
-        <h3>Personal Attributes</h3>
-        <ol>
-            <li>Intelligent</li>
-            <li>Strong</li>
-            <li>Kind</li>
-            <li>Truthful</li>
-            <li>Dependable</li>
-        </ol>
-        <h3>Career Trajectory</h3>
-            <p>In two years, I still see myself getting on my feet and learning all of the tricks of
-            the trade. 
-            In five years, I see myself either in a senior web developer role or a senior 
-            software engineering role.  
-            I will get there by first getting my foot into the industry and then work my
-            way up from there.</p>
-        <h3>Educational Qualifications</h3>
-        <table>
-            <tr>
-                <th>Qualification</th>
-                <th>Year Obtained</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>High School Diploma</td>
-                <td>2017</td>
-                <td>Graduated Magna Cum Laude</td>
-            </tr>
-        </table>
-        <h3>Employment History</h3>
-        <ol>
-            <li>Research Assistant at Meritor (2019)</li>
-            <li>Environmental Steward Internship at Belle Isle (2016-2017)</li>
-            <li>IT Help Desk at U of D Jesuit (2016-2017)</li>
-            <li>Golf Caddie (2014)</li>
-        </ol>
-        <h3>Contact</h3>
-        <form >
-                Email:
-                <input type="text" name="email"> <br> <br>
-                Message: <br>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here.."></textarea> <br> <br>
-                <button type="submit">Submit</button>
-            </form>
-
-            -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
