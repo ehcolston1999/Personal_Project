@@ -6,7 +6,7 @@ bootstrap change layout with smaller size
 -->
 <html>
     <head>
-        <title>Contact-Information</title>
+        <title>About Me</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
@@ -23,15 +23,6 @@ bootstrap change layout with smaller size
                 text-align: center;
                 margin-bottom: 25px;
             }
-            #left-bar{
-                width: 20%;
-                float: left;
-                text-align: center;
-                margin-right: 30px;
-                display: flex;
-                flex-flow: column;
-                
-            }
             a{
                 color: white;
                 /*Aesthetically my page looks better without the underline.*/
@@ -39,7 +30,6 @@ bootstrap change layout with smaller size
             }
             #right-bar{
                 float: left;
-                
             }
             .navbar {
                 min-height: 40px;
@@ -53,7 +43,8 @@ bootstrap change layout with smaller size
         </style>
     </head>
     <body>
-           <!-- Collapse -->
+        <header>
+            <!-- Collapse -->
     <div class="collapse fixed-top bg-dark" id="mobileNavbar">
         <div class="container mobile-menu-wrapper">
             <div class="row">
@@ -74,7 +65,7 @@ bootstrap change layout with smaller size
         </div>
     </div>
 
-    <nav class="navbar fixed-top navbar-light back">
+            <nav class="navbar fixed-top navbar-light back">
 
             <a href="#" class="navbar-brand">
                 <img height="30" src="racket-logo.png" alt="">
@@ -97,44 +88,28 @@ bootstrap change layout with smaller size
                 </li>
             </ul>
             </nav> <br>
-        <header>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div id="top-bar">
                             <br> <br>
-                            <h1>Contact Information</h1>
+                            <h1>About Me</h1>
                             <hr style="background-color: yellow;
                             height: 2px;">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 ">
-                        <!--<div id="left-bar">
-                            
-                            <h4>Ervin <br> Colston</h4>
-                            <h4><a href="project.html">About Me</a></h4>
-                            <h4><a href="infopage.html">Resume</a></h4>
-                            <h4><a href="contact.html">Contact Me</a></h4>
-                        </div>-->
+                    <div class="col-md-3">
+        
                     </div>
                     <div class="col-md-9">
                         <div id="right-bar">
-                            <h3 style="text-align: center;">Feel Free to Contact Me</h3> <br>
-                            <form >
-                                    Email <br>
-                                    <input type="text" name="email"
-                                    style="width: 375px;"> <br> <br>
-                                    Message: <br>
-                                    <textarea name="message" id="message" cols="50" rows="10" 
-                                    placeholder="Enter your message here.."></textarea> <br> <br>
-                                    <button style="background-color: yellow; 
-                                    border-radius: 12px; 
-                                    padding-left: 10px;
-                                    padding-right: 10px;" 
-                                    type="submit">Submit</button>
-                            </form>
+                            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFaNS1Kdz060A/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=s5rFPcJEvcIPShqXjxvPoMUlD99v-XPE7O6TVIX33OE" alt="myself">
+                            <br> <br>
+                            <h4>Ervin Colston</h4> <br>
+                            <h4>Age: 21</h4> <br>
+                            <h4>Profession: Senior at Wayne State for Computer Science</h4>
                         </div>
                     </div>
                 </div>
